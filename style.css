@@ -288,6 +288,7 @@ body {
 
 /* Мобильная адаптивность */
 @media (max-width: 600px) {
+	.logo {display: none;}
 	.header-container { padding: 12px 16px; }
 	.main-nav { gap: 16px; }
 	.nav-link { font-size: 14px; }
