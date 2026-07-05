@@ -187,6 +187,7 @@ body {
 }
 
 /* Блок с информацией */
+
 .info-section {
 	min-height: 100vh;
 	padding: 100px 24px;
@@ -288,20 +289,39 @@ body {
 
 /* Мобильная адаптивность */
 @media (max-width: 600px) {
-	.logo {display: none;}
-	.header-container { padding: 12px 16px; }
-	.main-nav { gap: 16px; }
-	.nav-link { font-size: 14px; }
+	.header-container { 
+		padding: 12px 16px; 
+		flex-direction: column;
+		align-items: flex-start; 
+		gap: 12px;
+	}
+
+	.main-nav { 
+		width: 100%;
+		gap: 20px; 
+		overflow-x: auto;
+		white-space: nowrap;
+		padding-bottom: 4px;
+		-webkit-overflow-scrolling: touch; 
+	}
+	.main-nav::-webkit-scrollbar {
+		display: none;
+	}
+
+	.nav-link { 
+		font-size: 15px; 
+		display: inline-block;
+	}
+
 	.hero-light-title { font-size: 32px; }
 	.hero-light-text { font-size: 16px; }
 	.hero-light-btn { display: block; width: 100%; max-width: 280px; margin: 0 auto; }
-
 	.scroll-arrow-container { bottom: 15px; font-size: 0; }
-	
 	.tabs-menu { gap: 4px; }
 	.tab-label { padding: 8px 12px; font-size: 14px; flex-grow: 1; text-align: center; }
 	.tabs-container { padding: 20px 16px; }
 }
+
 
 /* Блок информации (статичный) */
 .info-section-static {
@@ -505,12 +525,12 @@ body {
 	}
 }
 
-/* Исправление отступа между табами и проектами */
 .info-section {
-	height: 500px;
 	min-height: auto;
+	height: auto;
 	padding: 60px 20px;
 }
+
 
 /* Основной контейнер секции контактов */
 .contacts-section {
