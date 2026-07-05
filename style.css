@@ -498,7 +498,7 @@ body {
 
 /* Логика раскрытия */
 .project-checkbox:checked ~ .project-full-desc {
-	max-height: 500px;
+	max-height: 1000px;
 	padding: 20px;
 	border-top: 1px solid #e2e8f0;
 }
