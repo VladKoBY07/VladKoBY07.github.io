@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title>Визитка</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Шапка -->
+<header class="site-header">
+<div class="header-container">
+	<a href="./index.html" class="logo">Владислав Коваленко</a>
+	
+	<nav class="main-nav">
+		<a href="./aboutme.html" class="nav-link">Обо мне</a>
+		<a href="./aboutme.html" class="nav-link">Навыки</a>
+		<a href="./aboutme.html" class="nav-link">Интересы</a>
+		<a href="./projects.html" class="nav-link">Мои проекты</a>
+		<a href="./contacts.html" class="nav-link">Контакты</a>
+
+		<!--
+		<a href="#more-info" class="nav-link" onclick="document.getElementById('tab1').checked = true;">Обо мне</a>
+		<a href="#more-info" class="nav-link" onclick="document.getElementById('tab2').checked = true;">Навыки</a>
+		<a href="#more-info" class="nav-link" onclick="document.getElementById('tab3').checked = true;">Интересы</a>
+		<a href="#projects" class="nav-link">Мои проекты</a>
+		<a href="#contacts-page" class="nav-link">Контакты</a>
+		-->
+	</nav>
+</div>
+</header>
+
+<!-- Секция контактов -->
+<section class="contacts-section" id="contacts-page">
+<h2 class="projects-title">Контакты</h2>
+	<div class="contacts-container">
+	
+	<!-- Левая сторона: Текст -->
+	<div class="contacts-info" style="margin:50px;">
+		<h2 class="contacts-title">Давайте общаться</h2>
+		<p class="contacts-text">
+		Я открыт для предложений по стажировкам, совместным учебным проектам или просто для обсуждения интересных IT-задач. Пишите в любое удобное время.
+		</p>
+	</div>
+</div>
+<div class="contacts-container">
+
+	<!-- Правая сторона: Ссылки -->
+	<div class="contacts-list" style="margin:50px; margin-top:0px">
+	
+	<a href="https://t.me/VladKoBY" target="_blank" class="contact-card-link">
+		<span class="contact-icon"><img src="img/icons/telegram.png" alt="Telegram" width="40" height="40"></span>
+		<div class="contact-details">
+			<span class="contact-label">Telegram</span>
+			<span class="contact-value">@VladKoBY</span>
+		</div>
+	</a>
+	<a href="https://github.com/VladKoBY07" target="_blank" class="contact-card-link">
+		<span class="contact-icon"><img src="img/icons/github.png" alt="GitHub" width="40" height="40"></span>
+		<div class="contact-details">
+			<span class="contact-label">GitHub</span>
+			<span class="contact-value">VladKoBY07</span>
+		</div>
+	</a>
+	<a href="mailto:VladKoBY@ya.ru" class="contact-card-link">
+		<span class="contact-icon"><img src="img/icons/yandexmail.png" alt="Mail" width="40" height="40"></span>
+		<div class="contact-details">
+			<span class="contact-label">Эл. почта</span>
+			<span class="contact-value">VladKoBY@yandex.ru</span>
+		</div>
+	</a>
+
+</div>
+</div>
+</section>
+
+<!-- Футер -->
+<footer class="site-footer">
+<div class="footer-container">
+	<p class="footer-copy">&copy; 2026 Коваленко В.С. Личный сайт-визитка.</p>
+	<p class="footer-tech">Powered by GitHub Pages & AI | HTML & CSS</p>
+</div>
+</footer>
+
+</body>
+</html>

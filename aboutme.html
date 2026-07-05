@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title>Визитка</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Шапка -->
+<header class="site-header">
+<div class="header-container">
+	<a href="./index.html" class="logo">Владислав Коваленко</a>
+	
+	<nav class="main-nav">
+		<a href="./aboutme.html" class="nav-link">Обо мне</a>
+		<a href="./aboutme.html" class="nav-link">Навыки</a>
+		<a href="./aboutme.html" class="nav-link">Интересы</a>
+		<a href="./projects.html" class="nav-link">Мои проекты</a>
+		<a href="./contacts.html" class="nav-link">Контакты</a>
+
+		<!--
+		<a href="#more-info" class="nav-link" onclick="document.getElementById('tab1').checked = true;">Обо мне</a>
+		<a href="#more-info" class="nav-link" onclick="document.getElementById('tab2').checked = true;">Навыки</a>
+		<a href="#more-info" class="nav-link" onclick="document.getElementById('tab3').checked = true;">Интересы</a>
+		<a href="#projects" class="nav-link">Мои проекты</a>
+		<a href="#contacts-page" class="nav-link">Контакты</a>
+		-->
+	</nav>
+</div>
+</header>
+
+<!-- Информационный блок со статичными блоками -->
+<section class="info-section-static" id="more-info-static">
+	<div class="tabs-container">
+		
+		<div class="static-box">
+			<!-- Блок 1: Обо мне -->
+			<div class="static-block" id="static1">
+				<h2>Обо мне</h2>
+				<p>Я студент первого курса Прикладной информатики (БГУ ФПМИ). В данный момент активно закладываю фундаментальные знания в Computer Science и параллельно практикуюсь в разработке приложений.
+			<br>Моя цель на этот год — освоить ключевые навыки в IT и получить хорошую базу по интересным мне направлениям.
+			<br>Мой главный навык сейчас — умение учиться. Я воспринимаю любой пробел в знаниях как задачу, которую нужно решить через поиск информации и практику.
+			<br>Мой текущий фундамент — это основные принципы разработки и базовые практические умения.
+			<br>Сейчас я хочу чётко определить, какое направление индустрии мне подходит, чтобы продолжать развитие целенаправленно, углубляясь в конкретную среду</p>
+			</div>
+
+			<!-- Блок 2: Навыки -->
+			<div class="static-block" id="static2">
+				<h2>Мои навыки</h2>
+				<p>Технологии и инструменты, которые я сейчас активно изучаю и применяю на практике:</p>
+				<div class="skills-grid">
+					<span class="skill-badge">C/C++</span>
+					<span class="skill-badge">Основы ООП</span>
+					<span class="skill-badge">Git & GitHub</span>
+					<span class="skill-badge">Основы HTML и CSS</span>
+					<span class="skill-badge">VS Code</span>
+					<span class="skill-badge">Linux</span>
+				</div>
+			</div>
+
+			<!-- Блок 3: Интересы -->
+			<div class="static-block" id="static3">
+				<h2>Мои интересы</h2>
+				<p>Помимо программирования я также интересуюсь 2D и 3D дизайном, 3D печатью и радиоэлектроникой. Ранее я обучался в Национальном детском технопарке на специальности "Робототехника", где прошел курс обучения и активно участвовал в создании личных и командных проектов. Там я изучил строение и методы программирования микроконтроллеров, работал с платами arduino и esp32, микроконтроллером attiny13, изучал строение и методы программирования промышленных роботов. В связи с этим также рассматриваю возможность интеграции своих знаний по робототехнике в свою профессиональную деятельность</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section align=center>
+<a href="./index.html" class="hero-light-btn"> < Главная </a>
+<a href="./projects.html" class="hero-light-btn"> Мои проекты > </a>
+</section>
+
+<!-- Футер -->
+<footer class="site-footer">
+<div class="footer-container">
+	<p class="footer-copy">&copy; 2026 Коваленко В.С. Личный сайт-визитка.</p>
+	<p class="footer-tech">Powered by GitHub Pages & AI | HTML & CSS</p>
+</div>
+</footer>
+
+</body>
+</html>

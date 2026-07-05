@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title>Визитка</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Шапка -->
+<header class="site-header">
+<div class="header-container">
+	<a href="./index.html" class="logo">Владислав Коваленко</a>
+	
+	<nav class="main-nav">
+		<a href="./aboutme.html" class="nav-link">Обо мне</a>
+		<a href="./aboutme.html" class="nav-link">Навыки</a>
+		<a href="./aboutme.html" class="nav-link">Интересы</a>
+		<a href="./projects.html" class="nav-link">Мои проекты</a>
+		<a href="./contacts.html" class="nav-link">Контакты</a>
+
+		<!--
+		<a href="#more-info" class="nav-link" onclick="document.getElementById('tab1').checked = true;">Обо мне</a>
+		<a href="#more-info" class="nav-link" onclick="document.getElementById('tab2').checked = true;">Навыки</a>
+		<a href="#more-info" class="nav-link" onclick="document.getElementById('tab3').checked = true;">Интересы</a>
+		<a href="#projects" class="nav-link">Мои проекты</a>
+		<a href="#contacts-page" class="nav-link">Контакты</a>
+		-->
+	</nav>
+</div>
+</header>
+
+<!-- Секция моих проектов -->
+<section class="projects-section" id="projects">
+<div class="projects-container">
+<h2 class="projects-title">Мои проекты</h2>
+<!-- Сетка проектов -->
+<div class="projects-grid">
+
+	<!-- Проект 7 -->
+	<div class="project-card">
+	<input type="checkbox" id="project-toggle-7" class="project-checkbox">
+	<label for="project-toggle-7" class="project-card-header">
+		
+		<img src="img/projects/Кобот.jpg" alt="Проект 7" class="project-img">
+		<h3 class="project-name">Промышленная роботизированная ячейка на базе коллаборативного робота</h3>
+		<p class="project-short-desc"></p>
+	
+		<span class="project-more-btn">Подробнее</span>
+	</label>
+	<div class="project-full-desc">
+		<p>Проект был разработан в команде во время дистанционного обучения в Национальном детском технопарке. Моей частью проекта стало разработка, изготовление и установка специализированного захвата для коллаборативного робота. Захват позволяет поднимать и перемещать до 6 предметов одновременно, также захват имеет второе назначение - манипулирование заготовками коробок и складывание их в привычную форму. Для этого он имеет боковой упор, приводимый в движение пневматическим циллиндром. В стандартном положении боковой упор помещается в размер минимальной складываемой коробки, что позволяет манипулировать предметами на дне коробки не меняя захват.
+<br>Помимо разработки захвата были изучены методы программирования промышленных роботов</p>
+	</div>
+	</div>
+
+	<!-- Проект 6 -->
+	<div class="project-card">
+	<input type="checkbox" id="project-toggle-6" class="project-checkbox">
+	<label for="project-toggle-6" class="project-card-header">
+		
+		<img src="img/projects/Робот.jpg" alt="Проект 6" class="project-img">
+		<h3 class="project-name">Автоматизированный антропоморфный робот общего назначения</h3>
+		<p class="project-short-desc"></p>
+	
+		<span class="project-more-btn">Подробнее</span>
+	</label>
+	<div class="project-full-desc">
+		<p>Проект был разработан в команде во время дистанционного обучения в Национальном детском технопарке. Моей частью проекта стало разработка и сборка туловища и головы робота; разработка, изготовление и подключение плат управления; создание базовой программы для тестировки движений и удалённого управления. Для сборки проекта были использованы платы esp32-s3 и esp32-cam, были разработаны и изготовлены платы управления и стабилизации напряжения, подключена камера и датчик расстояния. Создано ПО для контроля робота через веб-страницу, программа для управления приводами робота по протоколу UART, библиотека с набором базовых движений</p>
+	</div>
+	</div>
+
+	<!-- Проект 5 -->
+	<div class="project-card">
+	<input type="checkbox" id="project-toggle-5" class="project-checkbox">
+	<label for="project-toggle-5" class="project-card-header">
+		
+		<img src="img/projects/Робот мойщик.jpg" alt="Проект 5" class="project-img">
+		<h3 class="project-name">Робот для обслуживания столовой</h3>
+		<p class="project-short-desc">Мой первый проект по робототехнике</p>
+	
+		<span class="project-more-btn">Подробнее</span>
+	</label>
+	<div class="project-full-desc">
+		<p>Проект был разработан в рамках очного обучения в Национальном детском технопарке. Весь проект состоит из двух роботов. Первый передвигается по столовой, убирает пол и имеет площадку для подносов в верхней части. Робот имеет модульную архитектуру что позволяет подобрать конфигурацию под определённую столовую.
+<br>В центральной части робота (на уровне стола) есть пространство для установки второго робота. Второй робот служит для сбора остатков пищи и мойки столов. Роботы имеют интерфейсы взаимодействия друг с другом и с людьми.
+<br>На практике был собран полноразмерный прототип меньшего робота. Робот самостоятельно убирает каждый участок стола, не выходя за его границы, и возвращается на базу. Мойщик может сообщить сигналом о наличии посторонних предметов на пути</p>
+	</div>
+	</div>
+
+	<!-- Проект 4 -->
+	<div class="project-card">
+	<input type="checkbox" id="project-toggle-4" class="project-checkbox">
+	<label for="project-toggle-4" class="project-card-header">
+		
+		<img src="img/projects/Сайт про мёд.jpg" alt="Проект 4" class="project-img">
+		<h3 class="project-name">Сайт для пасеки</h3>
+		<p class="project-short-desc">Статичный сайт на чистом HTML</p><br>
+	
+		<span class="project-more-btn">Подробнее</span>
+		<a href="./med/index.html" target="_blank" style="font-size: 14px; text-decoration: none; color: #3b82f6;">Перейти на сайт</a>
+	</label>
+	<div class="project-full-desc">
+		<p>Этот сайт был разработан во время прохождения первой части курса по HTML/CSS, идея возникла в связи с необходимостью рекламы пасеки моего дедушки. При разработке сайта были использованы основные элементы HTML, дизайн страниц статичен и вручную дублирован на все страницы. Сайт стал отличным завершением курса, так как он подытожил все изученые элементы и придал мотивацию на дальнейшее изучение сферы веб-разработки</p>
+	</div>
+	</div>
+
+	<!-- Проект 3 -->
+	<div class="project-card">
+	<input type="checkbox" id="project-toggle-3" class="project-checkbox">
+	<label for="project-toggle-3" class="project-card-header">
+		
+		<img src="img/projects/УКО3_1.jpg" alt="Проект 3" class="project-img">
+		<h3 class="project-name">УКО-3</h3>
+		<p class="project-short-desc">Более совершенная версия, на данный момент последний проект серии</p>
+	
+		<span class="project-more-btn">Подробнее</span>
+	</label>
+	<div class="project-full-desc">
+<img src="img/projects/УКО3_2.jpg" alt="Проект 3" class="project-img-add">
+		<p>Версия прошлого проекта после тщательной модернизации. Переработанная конструкция крепления позволяет устанавливать устройство на гораздо большем количестве моделей стульев, вплоть до домашних. Устройство имеет приставку (как в первой версии проекта), но на этот раз беспроводную и выполненную в виде подставки под книгу. Переработана система контроля наклона: теперь устройство также чувствительно к наклону в сторону и имеет встроенное ПО для анализа статистики. Создана концепция сбора данных с нескольких устройств на компьютер для анализа школьного класса.
+<br>Для реализации проекта изучены платы семейства Arduino, среда Arduino IDE и необходимые дополнительные платы</p>
+	</div>
+	</div>
+
+	<!-- Проект 2 -->
+	<div class="project-card">
+	<input type="checkbox" id="project-toggle-2" class="project-checkbox">
+	<label for="project-toggle-2" class="project-card-header">
+		
+		<img src="img/projects/УКО2.jpg" alt="Проект 2" class="project-img">
+		<h3 class="project-name">УКО-2</h3>
+		<p class="project-short-desc">(Устройство контроля осанки)<br>Продолжение предыдущего проекта</p>
+	
+		<span class="project-more-btn">Подробнее</span>
+	</label>
+	<div class="project-full-desc">
+		<p>Во время работы над первым проектом я заметил значительные недостатки: необходимость покупки и модернизации школьного стула, размер и вес устройства. Через некоторое время был разработан новый проект - устройство с аналогичным функционалом но с координально другим способом использования: установите УКО-2 на свой стул, нажмите кнопку включения и устройство готово к работе!</p>
+	</div>
+	</div>
+
+	<!-- Проект 1 -->
+	<div class="project-card">
+	<input type="checkbox" id="project-toggle-1" class="project-checkbox">
+	<label for="project-toggle-1" class="project-card-header">
+		
+		<img src="img/projects/Стул1.jpg" alt="Проект 1" class="project-img">
+		<h3 class="project-name">Инновационный стул предназначенный для контроля осанки школьников (УКО-1)</h3>
+		<p class="project-short-desc">Мой первый проект</p>
+	
+		<span class="project-more-btn">Подробнее</span>
+	</label>
+	<div class="project-full-desc">
+		<p>Устройство реагирует на наклон спины и, в случае нарушения осанки, сигнализирует об этом пользователю. В качестве дополнительных функций есть проводная приставка, размещаемая на столе для пользования устройством без звука, и стул отключается когда ученик встаёт.
+		<br>За время создания проекта я изучил основы радиотехники и научился составлять научную документацию.
+		<br>Проект выставлялся на различные научные конкурсы, занимал призовые места</p>
+	</div>
+	</div>
+
+</div>
+</div>
+</section>
+
+<section align=center>
+<a href="./aboutme.html" class="hero-light-btn"> < Обо мне </a>
+<a href="./contacts.html" class="hero-light-btn"> Контакты > </a>
+</section>
+
+<!-- Футер -->
+<footer class="site-footer">
+<div class="footer-container">
+	<p class="footer-copy">&copy; 2026 Коваленко В.С. Личный сайт-визитка.</p>
+	<p class="footer-tech">Powered by GitHub Pages & AI | HTML & CSS</p>
+</div>
+</footer>
+
+</body>
+</html>
